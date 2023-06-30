@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<sdf version='1.6'>
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+               
+  <model name="piros">
+    <pose>0.05 0.05 0.005 0 0 0</pose>
+    <static>true</static>
+    <link name="link">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.083</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz> <iyy>0.083</iyy> <iyz>0.0</iyz> <izz>0.083</izz>       
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1.0</ambient>
+          <diffuse>1 0 0 1.0</diffuse>
+          <specular>1 0 0 1.0</specular>
+          <emissive>1 0 0 1.0</emissive>
+      </material>  
+      </visual>
+    </link>
+  </model>
+  
+  <model name="kek">
+    <pose>0.05 -0.05 0.005 0 0 0</pose>
+    <static>true</static>
+    <link name="link">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.083</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz> <iyy>0.083</iyy> <iyz>0.0</iyz> <izz>0.083</izz>       
+        </inertia>
+      </inertial>
+     <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 1 1.0</ambient>
+          <diffuse>0 0 1 1.0</diffuse>
+          <specular>0 0 1 1.0</specular>
+          <emissive>0 0 1 1.0</emissive>
+      </material>  
+      </visual>
+    </link>
+  </model>
+  
+  <model name="zold">
+    <pose>-0.05 -0.05 0.005 0 0 0</pose>
+    <static>true</static>
+    <link name="link">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.083</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz> <iyy>0.083</iyy> <iyz>0.0</iyz> <izz>0.083</izz>       
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 1 0 1.0</ambient>
+          <diffuse>0 1 0 1.0</diffuse>
+          <specular>0 1 0 1.0</specular>
+          <emissive>0 1 0 1.0</emissive>
+      </material>  
+      </visual>
+    </link>
+  </model>
+  
+  <model name="fekete">
+    <pose>-0.05 0.05 0.005 0 0 0</pose>
+    <static>true</static>
+    <link name="link">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.083</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz> <iyy>0.083</iyy> <iyz>0.0</iyz> <izz>0.083</izz>       
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1.0</ambient>
+          <diffuse>0 0 0 1.0</diffuse>
+          <specular>0 0 0 1.0</specular>
+          <emissive>0 0 0 1.0</emissive>
+      </material>  
+      </visual>
+    </link>
+  </model>
+       
+  </world>
+</sdf>

@@ -1,0 +1,17 @@
+<launch>
+
+  <!--Launch my_world-->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find pack)/worlds/my_world.world"/>
+    <arg name="gui" value="true"/>
+    <arg name="paused" value="false"/>
+  </include>
+   
+   
+   <!--Open robot xacro-->
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find pack)/urdf/camera.xacro'" />
+  
+  <!--Spawn robot-->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model camera -param robot_description"/>
+   
+</launch>
